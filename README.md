@@ -1,5 +1,7 @@
 # ESP8266-Weather-Station
 
+<img src="/breadboard.png" width="500">
+
 ## Libraries Used:
 - Adafruit GFX
 - Adafruit SSD1306
