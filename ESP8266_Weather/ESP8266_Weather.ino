@@ -17,7 +17,6 @@
 #include <WiFiServerSecureBearSSL.h>
 #include <WiFiUdp.h>
 
-#include <SPI.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
@@ -153,12 +152,18 @@ display.display();
 display.setCursor(25,25);
 display.setTextSize(4);
 display.print(temp);
-//BEEG Degree Symbol
-display.print((char)248);
+//Draw Circle for degree symbol
+display.drawCircle(83, 25, 5, SSD1306_WHITE);
+//Make text size smaller to make the space between degree and F smaller - kinda hacky but it works
+display.setTextSize(3);
+display.print(" ");
+//Change text size back to 4
+display.setTextSize(4);
 display.print("F");
 display.display();
 //Finally move the cursor towards the bottom of the screen and make the size 1 to display the number of refreshes
-display.setCursor(0,55);
+//I added this as a way to know that the device is updating as the refresh is every 5 minutes
+display.setCursor(0,58);
 display.setTextSize(1);
 display.print(numRefresh);
 display.display();
