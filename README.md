@@ -7,7 +7,6 @@
 - Adafruit SSD1306
 - ArduinoJson by Benoit Blanchon
 - ESP8266Wifi
-- SPI
 - Wire
 
 ## Add to Additional Boards Manager URLs in Preferences
