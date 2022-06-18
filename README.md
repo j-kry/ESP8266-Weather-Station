@@ -3,7 +3,7 @@
 <table>
  <tr>
    <td><img src="/breadboard.png" width="500"></td>
-   <td><img src="/breadboard2.png" height="500"></td>
+   <td><img src="/breadboard2.png" width="500"></td>
  </tr>
 </table>
   
