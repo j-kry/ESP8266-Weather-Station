@@ -16,8 +16,14 @@
 - ESP8266Wifi
 - Wire
 
-## Add to Additional Boards Manager URLs in Preferences
+## If using Arduino IDE
+### Add to Additional Boards Manager URLs in Preferences
 arduino.esp8266.com/stable/package_esp8266com_index.json
+
+## If using PlatformIO
+### Use NodeMCU 1.0 ESP12 for board type
+
+### ---
 
 ## Instructions for board dependencies
 https://github.com/esp8266/Arduino
